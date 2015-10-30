@@ -1,0 +1,28 @@
+.collapsible {
+	overflow: hidden;
+	width: 100%;
+	
+	&.pre-expanding, &.collapsing {
+		.collapsible-body {
+			height: 0px;
+		}
+	}
+	
+	&.expanding, &.expanded {
+		.collapsible-body {
+			height: 50px;
+		}
+	}
+	
+	.collapsible-header {
+		color: #727579;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	
+	.collapsible-body {
+		transition: all 0.3s ease-in-out;
+		width: 400px;
+		border: 1px solid #ddd;
+	}
+}

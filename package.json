@@ -1,0 +1,36 @@
+{
+	"name": "jpm-gwm-connect-alerts",
+	"version": "1.0.0",
+	"dependencies": {
+		"jquery": "^2.1.4",
+		"lodash": "~3.10.0",
+		"react": "~0.13.3"
+	},
+	"devDependencies": {
+		"autoprefixer-loader": "2.0.0",
+		"babel-core": "^5.6.15",
+		"babel-loader": "^5.3.1",
+		"css-loader": "^0.15.1",
+		"del": "~1.2.0",
+		"extract-text-webpack-plugin": "~0.8.2",
+		"file-loader": "^0.8.4",
+		"html-minifier": "^0.7.2",
+		"html-webpack-plugin": "~1.5.2",
+		"less": "^2.5.1",
+		"less-loader": "^2.2.1",
+		"optimist": "^0.6.1",
+		"react-hot-loader": "~1.2.7",
+		"style-loader": "^0.12.3",
+		"url-loader": "~0.5.6",
+		"webpack": "~1.12.0",
+		"webpack-dev-server": "^1.10.1"
+	},
+	"scripts": {
+		"debug": "webpack-dev-server --config webpack.config.js --hot --port $PORT --host $IP --colors -d",
+		"build": "rm -rf dist/** && webpack --config webpack.config.js --devtool source-map"
+	},
+	"engines": {
+		"npm": ">=2.0.0"
+	},
+	"private": true
+}
